@@ -1,0 +1,15 @@
+version: '2'
+services:
+  solr:
+    image: solr:6.6
+    ports:
+     - "8983:8983"    
+    entrypoint:
+      solr-demo
+  banana:
+    image: pschatzmann/banana
+    ports:
+     - "8080:80"
+    restart: always
+    volumes:
+     - ./default.json:/usr/share/nginx/html/app/dashboards/default.json
