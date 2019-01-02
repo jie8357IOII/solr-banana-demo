@@ -8,7 +8,7 @@ use default solr demo collection
 ### Start solr and banana in docker compose
 
 ````
-docker up
+docker-compose up
 ````
 
 when solr and banana ready
